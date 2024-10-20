@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autodiagnóstico - Outubro Rosa</title>
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner Temático -->
+    <header class="banner">
+        <h1>Outubro Rosa - Prevenção ao Câncer de Mama</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Questionário de Autodiagnóstico</h2>
+        <p>Responda as perguntas abaixo para um pré-autodiagnóstico. Lembre-se, isso não substitui uma consulta médica!</p>
+        <form id="questionario">
+            <div class="pergunta">
+                <p>1. Você percebeu algum nódulo (caroço) na região da mama ou axila?</p>
+                <label><input type="radio" name="q1" value="sim"> Sim</label>
+                <label><input type="radio" name="q1" value="nao"> Não</label>
+            </div>
+            <div class="pergunta">
+                <p>2. Sua mama apresentou alguma mudança no formato ou tamanho?</p>
+                <label><input type="radio" name="q2" value="sim"> Sim</label>
+                <label><input type="radio" name="q2" value="nao"> Não</label>
+            </div>
+            <div class="pergunta">
+                <p>3. Notou alguma secreção saindo dos mamilos (fora do período de amamentação)?</p>
+                <label><input type="radio" name="q3" value="sim"> Sim</label>
+                <label><input type="radio" name="q3" value="nao"> Não</label>
+            </div>
+            <div class="pergunta">
+                <p>4. Alguma parte da pele da mama ficou enrugada, com aspecto de "casca de laranja"?</p>
+                <label><input type="radio" name="q4" value="sim"> Sim</label>
+                <label><input type="radio" name="q4" value="nao"> Não</label>
+            </div>
+            <div class="pergunta">
+                <p>5. Você percebeu alguma alteração nos mamilos, como retração ou inversão?</p>
+                <label><input type="radio" name="q5" value="sim"> Sim</label>
+                <label><input type="radio" name="q5" value="nao"> Não</label>
+            </div>
+            <button type="button" onclick="verificarRespostas()">Enviar</button>
+        </form>
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <!-- Rodapé com a logo e frases de apoio -->
+    <footer>
+        <div class="frases-apoio">
+            <p class="frase">"O cuidado com a saúde começa com a prevenção!"</p>
+            <p class="frase">"Outubro Rosa: Juntos na luta contra o câncer de mama."</p>
+        </div>
+        <div class="logo-sequoia">
+            <img src="https://www.example.com/sequoia-logo.png" alt="SEQUOIA">
+        </div>
+    </footer>
+
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

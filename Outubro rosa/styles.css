@@ -1,0 +1,143 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://www.example.com/outubro-rosa-bg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+    color: #333;
+}
+
+/* Banner no topo */
+.banner {
+    background-color: rgba(240, 98, 146, 0.9); /* Fundo rosa com opacidade */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra no banner */
+}
+
+.banner h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Container do formulário */
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+    text-align: center;
+}
+
+/* Estilo das perguntas */
+.pergunta {
+    margin: 20px 0;
+}
+
+.pergunta p {
+    font-size: 18px;
+    color: #444;
+}
+
+/* Estilo dos rótulos das respostas */
+label {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Botão de envio */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #e91e63; /* Rosa escuro */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #d81b60; /* Cor mais intensa no hover */
+}
+
+/* Div de resultado */
+.resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e91e63; /* Cor de destaque */
+}
+
+/* Rodapé */
+footer {
+    position: relative;
+    padding: 30px 0;
+    background-color: rgba(240, 98, 146, 0.9); /* Rosa escuro com opacidade */
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Frases de apoio em segundo plano */
+.frases-apoio {
+    position: relative;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); /* Frases com leve transparência */
+}
+
+.frases-apoio .frase {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Logo da SEQUOIA no canto inferior direito */
+.logo-sequoia {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: rgba(0, 128, 0, 1.0);
+}
+
+.logo-sequoia img {
+    width: 100px;
+    opacity: 0.8; /* Logo levemente transparente */
+}
+
+.logo-sequoia img:hover {
+    opacity: 1; /* Fica opaca ao passar o mouse */
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
